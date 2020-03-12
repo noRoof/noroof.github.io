@@ -56,7 +56,7 @@ header.home-header {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 6rem;
+    padding: 0.2rem 1rem;
     .title {
       display: flex;
       img {
@@ -67,6 +67,12 @@ header.home-header {
         margin-top: 0.5rem;
       }
     }
+    &.fixed-nav {
+      position: fixed;
+      background-color: white;
+      border-bottom: 1px solid black;
+      width: 100%
+    }
   }
   .banner {
     flex: 1;
@@ -75,6 +81,22 @@ header.home-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+section {
+  min-height: 100vh;
+  margin: 0 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    min-width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

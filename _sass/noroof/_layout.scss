@@ -67,10 +67,19 @@ header.home-header {
       position: fixed;
       background-color: white;
       border-bottom: 1px solid black;
-      width: 100%
+      width: calc(100% - 2rem);
     }
-    li {
-      display: inline-block;
+    .sections {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      ul {
+        margin-bottom: 0;
+        li {
+          display: inline-block;
+          margin-left: 1rem;
+        }
+      }
     }
   }
   .banner {

@@ -26,6 +26,7 @@ subtitle: Home
     <h2>Our services</h2>
     <article>
       <h3>Frontend Developmet</h3>
+      <p>Nowadays great products and solutions must have great look and feel, interactions and provide an excellent experience to users. We work with top technologies and take care to improve our abilities in order to deliver the best results we can when we build Web Applications, Hybrid Applications and Progressive Web Apps.</p>
     </article>
     <article>
       <h3>Backend Developmet</h3>
@@ -45,6 +46,7 @@ subtitle: Home
   </section>
   <section id="contact">
     <h2>Get in touch</h2>
+    Feel free to send us an email at <span id="replace">javascript is not enabled, please use the contact form.</span>
     <form class="contact-form" action="https://formspree.io/mbjkrvnz" method="post">
       <label>
         Your name:
@@ -62,9 +64,15 @@ subtitle: Home
         Your message:
         <textarea name="message"></textarea>
       </label>
-    
+      <input type="hidden" name="_next" value="https://noroofdevelopment.com/thanks.html" />
+      <input type="text" name="_gotcha" style="display:none" />
       <button type="submit">Send</button>
 
     </form>
   </section>
 </main>
+<script>
+  var innerEmail = document.getElementById('replace')
+  const emailE = ('hi@' + 'noroofdevelopment.com');
+  innerEmail.innerHTML = '<a href="mailto:' + emailE + '">' + emailE + '</a>';
+</script>

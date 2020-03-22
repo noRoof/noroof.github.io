@@ -56,16 +56,26 @@ header.home-header {
   
   .banner {
     flex: 1;
-    margin-left: 12%;
-    max-width: 40rem;
+    margin: 0 12%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1 {
-      color: $primary-green;
+    justify-content: space-between;
+    .banner-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0.6;
+      h1 {
+        color: $primary-green;
+      }
+      p {
+        color: $primary-green;
+      }
     }
-    p {
-      color: $primary-green;
+    .banner-image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0.3;
     }
   }
 }
@@ -82,8 +92,8 @@ nav {
   }
   &.fixed-nav {
     position: fixed;
-    background-color: white;
-    border-bottom: 1px solid black;
+    background-color: #e0eafc; /* fallback for old browsers */
+    border-bottom: 1px solid $grey-color-light;
     width: calc(100% - 2rem);
   }
   .sections {

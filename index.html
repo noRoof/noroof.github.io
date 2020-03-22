@@ -11,8 +11,8 @@ subtitle: Home
     <div class="sections">
       <ul>
         <li><a href="#services">{{ site.data.header.services }}</a></li>
-        <li><a href="#past-experience">{{ site.data.home.past-experience }}</a></li>
-        <li><a href="#contact">{{ site.data.home.contact }}</a></li>
+        <li><a href="#past-experience">{{ site.data.header.past-experience }}</a></li>
+        <li><a href="#contact">{{ site.data.header.contact }}</a></li>
       </ul>
     </div>
   </nav>
@@ -24,25 +24,25 @@ subtitle: Home
 <main>
   <section id="services">
     <h2>Our services</h2>
+    {% for article in site.services %}    
     <article>
-      <h3>Frontend Developmet</h3>
-      <p>Nowadays great products and solutions must have great look and feel, interactions and provide an excellent experience to users. We work with top technologies and take care to improve our abilities in order to deliver the best results we can when we build Web Applications, Hybrid Applications and Progressive Web Apps.</p>
+      {{article.content}}
     </article>
-    <article>
-      <h3>Backend Developmet</h3>
-      <p>Server side applications are also a key part for great products and solutions. At least they must be robust, performant, scalable and secure, and also they have to be a good fit to the requirements of the solution needed. We take all of it seriously and we are able to develop high quality software in different cutting edge technologies.</p>
-    </article>
+    {% endfor %}
   </section>
   <section id="past-experience">
     <h2>Experience</h2>
-    <p>After years of professional experience, we collected experience in different projects across several industries.</p>
+    <p>After years of professional experience, we collected experience in different projects across several industries.
+    </p>
     <article>
       <h3>Fintech</h3>
-      <p>We develop a client - server responsive web application for a fintech start-up helping them to validate their business idea with a functional and scalable MVP. Technologies used: Angular, Grails and Bootstrap.</p>
+      <p>We develop a client - server responsive web application for a fintech start-up helping them to validate their
+        business idea with a functional and scalable MVP. Technologies used: Angular, Grails and Bootstrap.</p>
     </article>
     <article>
       <h3>Education</h3>
-      <p>We worked in the development of a web application used to work with the students in the classroom, having different kinds of assessments, reports and tools used by teachers.</p>
+      <p>We worked in the development of a web application used to work with the students in the classroom, having
+        different kinds of assessments, reports and tools used by teachers.</p>
     </article>
   </section>
   <section id="contact">

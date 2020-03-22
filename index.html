@@ -35,6 +35,16 @@ subtitle: Home
     </article>
     {% endfor %}
   </section>
+  <section id="process">
+    <h2>How do we work?</h2>
+    <h3>&quot;We don’t just work for you, we work with you.&quot;</h3>
+    <p>This is the best way to describe how we work, we truly believe that communication and cooperation are the keys for a successful job. You know about your business, your new product ideas and your problems, and we are passionate about technology and to use it to solve problems and bring new products to life. Let’s work together!</p>
+    {% for article in site.process %}    
+    <article>
+      {{article.content}}
+    </article>
+    {% endfor %}
+  </section>
   <section id="past-experience">
     <h2>Experience</h2>
     <p>After years of professional experience, we collected experience in different projects across several industries.
@@ -48,6 +58,13 @@ subtitle: Home
       <h3>Education</h3>
       <p>We worked in the development of a web application used to work with the students in the classroom, having
         different kinds of assessments, reports and tools used by teachers.</p>
+    </article>
+  </section>
+  <section id="why-us">
+    <article class="card">
+      {% for article in site.why %}    
+        {{article.content}}
+      {% endfor %}
     </article>
   </section>
   <section id="contact">
@@ -73,7 +90,6 @@ subtitle: Home
       <input type="hidden" name="_next" value="https://noroofdevelopment.com/thanks.html" />
       <input type="text" name="_gotcha" style="display:none" />
       <button type="submit">Send</button>
-
     </form>
   </section>
 </main>

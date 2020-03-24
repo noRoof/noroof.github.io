@@ -70,28 +70,32 @@ subtitle: Home
     </article>
   </section>
   <section id="contact">
-    <h2>Get in touch</h2>
-    Feel free to send us an email at <span id="replace">javascript is not enabled, please use the contact form.</span>
+    <div class="contact-header">
+      <h2>Get in touch</h2><img src="{{ "/assets/img/mailbox.png" | relative_url }}" alt="noRoof development">
+    </div>
+    Feel free to send us an email at <span id="replace">javascript is not enabled, please use the contact form.</span> or to send us a message here.
     <form class="contact-form" action="https://formspree.io/mbjkrvnz" method="post">
-      <label>
+      <label class="col-6 padding-right">
         Your name:
         <input type="text" name="name">
       </label>
-      <label>
+      <label class="col-6">
         Your email:
         <input type="text" name="_replyto">
       </label>
-      <label>
+      <label class="col-12">
         Your subject:
         <input type="text" name="subject">
       </label>
-      <label>
+      <label class="col-12">
         Your message:
         <textarea name="message"></textarea>
       </label>
       <input type="hidden" name="_next" value="https://noroofdevelopment.com/thanks.html" />
       <input type="text" name="_gotcha" style="display:none" />
-      <button type="submit">Send</button>
+      <div class="form-buttons">
+        <button class="contact-btn" type="submit">Send</button>
+      </div>
     </form>
   </section>
 </main>

@@ -2,6 +2,7 @@ collections:
   services:
   process:
   why:
+  experience:
 defaults:
   - scope:
       path: ""

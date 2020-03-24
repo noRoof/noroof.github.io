@@ -78,10 +78,12 @@ header.home-header {
 
       h1 {
         color: $primary-green;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
       }
 
-      p {
+      h3 {
         color: $primary-green;
+        animation: 1s ease-out 0s 1 slideInFromRight;
       }
     }
 
@@ -90,6 +92,9 @@ header.home-header {
       flex-direction: column;
       justify-content: center;
       flex: 0.3;
+      img {
+        animation: 1s ease-out 0s 1 slideInFromBottom;
+      }
     }
   }
 }

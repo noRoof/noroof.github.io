@@ -19,7 +19,7 @@ subtitle: Home
   <div class="banner">
     <div class="banner-text">
       <h1>Software development to bring solutions for real problems</h1>
-      <p>We craft high quality software to build products and bring solutions to our <s>clients</s> partners.</p>
+      <h3>We craft high quality software to build products and bring solutions to our <s>clients</s> partners.</h3>
     </div>
     <div class="banner-image-container">
       <img src="{{ "/assets/img/headerimage.png" | relative_url }}" alt="Solving problems">
@@ -53,7 +53,7 @@ subtitle: Home
   <section id="past-experience">
     <h2>Experience</h2>
     <p><b>After years of professional experience, we collected experience in different projects across several
-        industries.<b></p>
+        industries.</b></p>
 
     <div class="two-columns">
       {% assign sortedExperience = site.experience | sort: 'identifier' %}
@@ -80,19 +80,19 @@ subtitle: Home
     <form class="contact-form" action="https://formspree.io/mbjkrvnz" method="post">
       <label class="col-6 padding-right">
         Your name:
-        <input type="text" name="name">
+        <input required maxlength="250" type="text" name="name">
       </label>
       <label class="col-6">
         Your email:
-        <input type="text" name="_replyto">
+        <input required maxlength="250" type="email" name="_replyto">
       </label>
       <label class="col-12">
         Your subject:
-        <input type="text" name="subject">
+        <input required maxlength="250" type="text" name="subject">
       </label>
       <label class="col-12">
         Your message:
-        <textarea name="message"></textarea>
+        <textarea required maxlength="2500" name="message"></textarea>
       </label>
       <input type="hidden" name="_next" value="https://noroofdevelopment.com/thanks.html" />
       <input type="text" name="_gotcha" style="display:none" />

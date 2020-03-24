@@ -112,7 +112,7 @@ nav {
 }
 
 section {
-  margin: 0 8rem;
+  padding: 1rem 8rem 2rem 8rem;
 
   h2 {
     text-align: center;
@@ -134,12 +134,48 @@ section {
   }
 
   &#process {
+    background-color: lavender;
     h3 {
       text-align: center;
     }
     article {
       h3 {
         text-align: left;
+      }
+    }
+  }
+
+  &#why-us {
+    background-color: aliceblue;
+    article.card {
+      background-color: ivory;
+    }
+  }
+
+  .two-columns {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    .vertical-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      img {
+        max-width: 250px;
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      .image-container {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
       }
     }
   }
@@ -358,8 +394,6 @@ form {
 }
 
 section {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
   .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -27,14 +27,18 @@ subtitle: Home
   </div>
 </header>
 <main>
+
   <section id="services">
-    <h2>Our services</h2>
-    {% for article in site.services %}
+    <h2>{{ site.data.header.servicesSection }}</h2>
+    {% assign sortedServices = site.services | sort: 'position' %}
+    {% for article in sortedServices %}
     <article>
+      <img src="{{ article.imageUrl | relative_url }}" alt="{{ article.imgAlt }}"/>      
       {{article.content}}
     </article>
     {% endfor %}
   </section>
+
   <section id="process">
     <h2>How do we work?</h2>
     <h3>&quot;We don’t just work for you, we work with you.&quot;</h3>
@@ -76,7 +80,8 @@ subtitle: Home
     <div class="contact-header">
       <h2>Get in touch</h2><img src="{{ "/assets/img/mailbox.png" | relative_url }}" alt="noRoof development">
     </div>
-    Feel free to send us an email at <span id="replace">javascript is not enabled, please use the contact form.</span> or to send us a message here.
+    Feel free to send us an email at <span id="replace">javascript is not enabled, please use the contact form.</span>
+    or to send us a message here.
     <form class="contact-form" action="https://formspree.io/mbjkrvnz" method="post">
       <label class="col-6 padding-right">
         Your name:

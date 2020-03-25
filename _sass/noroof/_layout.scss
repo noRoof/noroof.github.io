@@ -40,6 +40,7 @@ header.home-header {
       flex-direction: column;
       justify-content: center;
       flex: 0.3;
+
       img {
         animation: 1s ease-out 0s 1 slideInFromBottom;
       }
@@ -169,8 +170,9 @@ section {
     background-color: F3F3F3;
 
     h2 {
-      grid-row-start:1;
+      grid-row-start: 1;
     }
+
     p {
       grid-row-start: 2;
       justify-self: center;
@@ -185,6 +187,40 @@ section {
 
     article.card {
       background-color: FFFFFF;
+    }
+  }
+
+  &#services {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 1rem;
+    background-color: F3F3F3;
+
+    h2 {
+      grid-column: 1 / span 2;
+    }
+
+    article {
+      display: grid;
+      grid-column-gap: 1rem;
+
+      h3 {
+        grid-column: 1 / span 2;
+        align-self: center;
+        justify-self: center;
+      }
+
+      img {
+        grid-row: 2;
+        grid-column: 1;
+      }
+
+      p {
+        grid-row: 2;
+        grid-column: 2;
+      }
     }
   }
 }
@@ -211,6 +247,7 @@ form {
   justify-content: space-between;
   margin-top: 1rem;
   align-items: center;
+
   .col-6 {
     width: 45%;
   }
@@ -236,13 +273,13 @@ form {
       height: 3rem;
     }
   }
-  
+
   .form-buttons {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-top: 1rem;
-    
+
     .contact-btn {
       background-color: $primary-green;
       padding: 1rem 4rem;
@@ -369,7 +406,7 @@ form {
   padding: $spacing-unit 0;
   display: flex;
   justify-content: space-between;
-  
+
   img {
     height: 58px;
   }

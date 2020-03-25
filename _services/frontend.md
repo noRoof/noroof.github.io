@@ -1,5 +1,9 @@
 ---
+position: 1
+imageUrl: "/assets/img/frontendimage.png"
+imgAlt: "Front End"
 ---
+
 ### Frontend Development
 
 Nowadays great products and solutions must have great look and feel, interactions and provide an excellent

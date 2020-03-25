@@ -27,11 +27,17 @@ header.home-header {
       h1 {
         color: $primary-green;
         animation: 1s ease-out 0s 1 slideInFromLeft;
+        @include media-query($on-palm) {
+          font-size: 24px;
+        }
       }
 
       h3 {
         color: $primary-green;
         animation: 1s ease-out 0s 1 slideInFromRight;
+        @include media-query($on-palm) {
+          font-size: 18px;
+        }
       }
     }
 
@@ -160,6 +166,10 @@ section {
         justify-content: flex-end;
       }
     }
+
+    @include media-query($on-palm) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &#past-experience {
@@ -222,6 +232,9 @@ section {
         grid-column: 2;
       }
     }
+  }
+  @include media-query($on-palm) {
+    padding: 1rem;
   }
 }
 

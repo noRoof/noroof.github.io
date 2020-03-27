@@ -1,4 +1,10 @@
-services: Services
-past-experience: Experience
-contact: Get in touch
-servicesSection: What we can do
+- name: Services
+  link: "#services"
+- name: Process
+  link: "#process"
+- name: Experience
+  link: "#past-experience"
+- name: About
+  link: "#why-us"
+- name: Get in touch
+  link: "#contact"

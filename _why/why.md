@@ -1,7 +1,7 @@
 ---
 ---
 
-## Why us
+## Why us?
 
 Having **fluent communication** is one of our most important assets in order to do a great job. In our experience things go well when we trust each other and when we put communication as a priority. 
 
@@ -11,6 +11,9 @@ It is impossible to deliver good results if the only thing that matters to us is
 
 We are confident in our **technical expertise** but we are even more confident in the abilities that we are constantly developing to bring better solutions to our partners. That’s the only way that we know to be up to date with cutting edge technologies.
 
-There are some aspects of the software in witches we pay special attention because we consider they are critical to almost every application. **Security** is a must and we are focused to be up to date in best practices to develop secure applications. If users don’t like what we do, they won’t come back. Applications having great **User Experience** will have many competitive advantages, from reducing training costs to improving users conversion rate. Great UX is difficult to reach without good **performance** and it is another thing to which we pay attention since a project begins and also when an application scales. **Quality** can’t be out of the list, and is very important to us to make sure that what we do has top quality standards from analysis, design and development to delivered software.
+<details>
+  <summary>Security, User Experience, Performance and Quality?</summary>
+  There are some aspects of the software in witches we pay special attention because we consider they are critical to almost every application. <b>Security</b> is a must and we are focused to be up to date in best practices to develop secure applications. If users don’t like what we do, they won’t come back. Applications having great <b>User Experience</b> will have many competitive advantages, from reducing training costs to improving users conversion rate. Great UX is difficult to reach without good <b>performance</b> and it is another thing to which we pay attention since a project begins and also when an application scales. <b>Quality</b> can’t be out of the list, and is very important to us to make sure that what we do has top quality standards from analysis, design and development to delivered software.
+</details>
 
 Keeping up to date with trending technologies allows us to offer different opportunities. Taking advantage of cloud tech is one of them that enables us to provide you quick value and return on your investment. 

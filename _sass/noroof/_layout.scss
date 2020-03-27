@@ -17,6 +17,9 @@ header.home-header {
     margin: 0 12%;
     display: flex;
     justify-content: space-between;
+    @include media-query($on-palm) {
+      flex-direction: column;
+    }
 
     .banner-text {
       display: flex;
@@ -119,14 +122,14 @@ section {
   }
 
   &#process {
-    background-color: lavender;
+    background-color: aliceblue;
 
     h3 {
       text-align: center;
     }
 
     article {
-      h3 {
+      p {
         text-align: left;
       }
     }
@@ -211,6 +214,7 @@ section {
     article {
       display: flex;
       flex-direction: column;
+
       h3 {
         text-align: center;
       }
@@ -218,6 +222,10 @@ section {
       .content {
         flex: 1;
         display: flex;
+        @include media-query($on-palm) {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
         .image-container {
           display: flex;
           flex-direction: column;
@@ -227,12 +235,20 @@ section {
           img {
             max-width: 190px;
           }
+          @include media-query($on-palm) {
+            flex-direction: row;
+            grid-row: 1;
+            margin-bottom: 1rem;
+          }
         }
         .text-container {
           display: flex;
           flex-direction: column;
           justify-content: center;
           flex: 1;
+          @include media-query($on-palm) {
+            grid-row: 2;
+          }
         }
       }
     }

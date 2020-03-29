@@ -81,6 +81,7 @@ nav {
     border-bottom: 1px solid $grey-color-light;
     width: calc(100% - 2rem);
     z-index: 1;
+    animation: 0.5s ease-out 0s 1 slideInFromTop;
   }
 
   .sections {
@@ -100,7 +101,7 @@ nav {
 }
 
 section {
-  padding: 1rem 8rem 2rem 8rem;
+  padding: 5rem 8rem 2rem 8rem;
 
   h2 {
     text-align: center;
@@ -190,7 +191,6 @@ section {
 
   &#past-experience {
     display: grid;
-    padding-top: 2rem;
     grid-column-gap: 2rem;
     grid-row-gap: 1rem;
     background-color: #F3F3F3;
@@ -217,7 +217,6 @@ section {
   }
 
   &#services {
-    padding-top: 2rem;
     background-color: #F3F3F3;
 
     h2 {

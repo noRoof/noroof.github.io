@@ -2,6 +2,7 @@
 position: 3
 imageUrl: "/assets/img/consultancyimage.png"
 imgAlt: "Solutions consultancy"
+serviceId: "consultancy"
 ---
 
 ### Solutions consultancy

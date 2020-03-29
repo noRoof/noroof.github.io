@@ -2,6 +2,7 @@
 position: 1
 imageUrl: "/assets/img/frontendimage.png"
 imgAlt: "Front End"
+serviceId: "front-end"
 ---
 
 ### Frontend Development

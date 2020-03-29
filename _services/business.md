@@ -2,6 +2,7 @@
 position: 4
 imageUrl: "/assets/img/business_intelligence.png"
 imgAlt: "Business Intelligence"
+serviceId: "business-intelligence"
 ---
 
 ### Business Intelligence

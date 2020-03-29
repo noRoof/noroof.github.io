@@ -5,6 +5,7 @@ header.home-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 3rem;
   background: #e0eafc;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #e0eafc, #cfdef3);
@@ -101,7 +102,9 @@ nav {
 }
 
 section {
-  padding: 5rem 8rem 2rem 8rem;
+  padding: 7rem 8rem 6rem 8rem;
+  margin-top: -5rem;
+  clip-path: polygon(0 5rem, 100% 0, 100% 100%, 0% 100%);
 
   h2 {
     text-align: center;
@@ -120,10 +123,6 @@ section {
     color: #737373;
     border-radius: 4px;
     position: relative;
-
-    &:hover {
-      transform: translateY(-3px);
-    }
   }
 
   &#process {
@@ -155,6 +154,29 @@ section {
 
   &#contact {
     background-color: #F0F7FA;
+    padding: 7rem 0 6rem 0;
+
+    @include media-query($on-palm) {
+      padding: 5rem 1rem;
+    }
+
+    h3 {
+      margin-left: 8rem;
+      margin-right: 8rem;
+      @include media-query($on-palm) {
+        margin-left: unset;
+        margin-right: unset;
+      }
+    }
+
+    p {
+      margin-left: 8rem;
+      margin-right: 8rem;
+      @include media-query($on-palm) {
+        margin-left: unset;
+        margin-right: unset;
+      }
+    }
   }
 
   .two-columns {
@@ -283,7 +305,7 @@ section {
     }
   }
   @include media-query($on-palm) {
-    padding: 1rem;
+    padding: 5rem 1rem;
   }
 }
 
@@ -303,7 +325,36 @@ section {
   }
 }
 
+.form-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.5fr;
+  grid-column-gap: 2rem;
+
+  @include media-query($on-palm) {
+    width: unset;
+    margin-left: unset;
+    display: block;
+  }
+
+  .image-container {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+      width: 200px;
+      height: 199px;
+    }
+
+    @include media-query($on-palm) {
+      display: none;
+    }
+  }
+}
+
 form {
+  grid-column: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -535,8 +586,6 @@ form {
     width: calc(100% - (#{$spacing-unit} / 2));
   }
 }
-
-
 
 /**
  * Page content

@@ -267,3 +267,16 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+.hide-small {
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
+.show-small {
+  display: none;
+  @include media-query($on-palm) {
+    display: unset;
+  }
+}

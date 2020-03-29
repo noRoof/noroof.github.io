@@ -59,7 +59,7 @@ subtitle: Home
     </p>
     <div class="two-columns">
       {% for article in site.process %}
-      <article class="vertical-card card">
+      <article id="{{article.processId}}" class="vertical-card card">
         {{article.content}}
       </article>
       {% endfor %}

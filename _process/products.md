@@ -1,4 +1,5 @@
 ---
+processId: "products"
 ---
 <div class="image-container">
   <img src="{{ "/assets/img/mvp_creative.png" | relative_url }}" alt="Scrum board"/>

@@ -149,6 +149,14 @@ section {
 
     article.card {
       background-color: ivory;
+
+      ul {
+        list-style-type: square;
+      }
+
+      summary {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 

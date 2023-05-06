@@ -8,13 +8,13 @@ defaults:
       path: ""
     values:
       layout: "default"
-title: noRoof Development
+title: noRoof development
 subtitle: Home
-email: hi@noroofdevelopment.com
+email: hi@noroof.dev
 description: >- # this means to ignore newlines until "baseurl:"
-  noRoof Development focus on deliver high quality software to our partners.
+  noRoof development focus on deliver high quality software to our partners.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://noroofdevelopment.com/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://noroof.dev/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: noroofdev
 github_username:  noroof
 

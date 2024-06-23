@@ -31,7 +31,7 @@ subtitle: Home
   <div class="banner">
     <div class="banner-text">
       <h1>Developing software to bring solutions for real problems</h1>
-      <h3>We craft high-quality software to build products and bring solutions to our <s>clients</s> partners</h3>
+      <h2>We craft high-quality software to build products and bring solutions to our <s>clients</s> partners</h2>
     </div>
     <div class="banner-image-container">
       <img src="{{ "/assets/img/headerimage.png" | relative_url }}" alt="Solving problems">
@@ -40,8 +40,13 @@ subtitle: Home
 </header>
 <main>
 
-  <section id="services">
-    <h2>What we can do</h2>
+  <section id="process">
+    <h2>How we work</h2>
+    <h3>"We don’t just work for you, we work with you."</h3>
+    <p>This is the best way to describe how we work. We truly believe that communication and 
+      cooperation are the keys to bring great products to the market. You know about your business, pains and problems. We are passionate about technology and how to use it to solve problems 
+      and to bring new products to life. Let’s work together!
+    </p>
     {% assign sortedServices = site.services | sort: 'position' %}
     {% for article in sortedServices %}
     <article id="{{article.serviceId}}">      
@@ -50,14 +55,12 @@ subtitle: Home
     {% endfor %}
   </section>
 
-  <section id="process">
-    <h2>How we work</h2>
-    <h3>&quot;We don’t just work for you, we work with you.&quot;</h3>
-    <p>This is the best way to describe how we work. We truly believe that communication and 
-      cooperation are the keys to a successful job. You know about your business, your new product 
-      ideas and your problems.We are passionate about technology and how to use it to solve problems 
-      and to bring new products to life. Let’s work together!
-    </p>
+  <section id="projects">
+    <h2>Our Products and Projects</h2>
+    <h3>&quot;Delivering Impactful Solutions Across Various Domains.&quot;</h3>
+    <p>We have worked in different projects across several domains for years.
+      We like to to solve problems and bring solutions that can improve people's lives.
+      Take a look at some of them, and feel free to talk with us and discuss new ideas!</p>
     <div class="two-columns">
       {% for article in site.process %}
       <article id="{{article.processId}}" class="vertical-card card">
@@ -82,6 +85,8 @@ subtitle: Home
 
   </section>
   <section id="why-us">
+    <h2>Why us?</h2>
+    <p>At noRoof Development, we believe in breaking boundaries and creating limitless possibilities. Founded with a vision to empower businesses and communities, we specialize in developing innovative web applications that drive success.</p>
     <article class="card">
       {% for article in site.why %}
       {{article.content}}
@@ -92,10 +97,10 @@ subtitle: Home
     <div class="contact-header">
       <h2>Get in touch</h2><img class="show-small" src="{{ "/assets/img/mailbox.png" | relative_url }}" alt="noRoof development">
     </div>
-    <p>If you want to talk about your next project, or you need some help with the one in progress,feel free to contact us at <span id="replace">javascript is not enabled, please use the contact form.</span>
+    <p>If you want to talk about some of our projects, or you need some help with your business problems, feel free to contact us at <span id="replace">javascript is not enabled, please use the contact form.</span>
       or to write a message below.</p>
     <div class="form-container">
-      <form class="contact-form" action="https://formspree.io/mbjkrvnz" method="post">
+      <form class="contact-form" action="https://formspree.io/f/mbjkrvnz" method="post">
         <div class="form__group col-6 padding-right">
           <input type="text" id="name" name="name" required maxlength="250" class="form__field" placeholder="Your Name">
           <label for="name" class="form__label">Your Name</label>

@@ -1,7 +1,7 @@
-- name: Services
-  link: "#services"
 - name: Process
   link: "#process"
+- name: Products
+  link: "#projects"
 - name: Experience
   link: "#past-experience"
 - name: About

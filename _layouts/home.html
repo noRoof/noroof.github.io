@@ -18,13 +18,17 @@
     const frontend_height = document.querySelector("#front-end").offsetHeight
     const backend = document.querySelector("#back-end")
     const backend_height = document.querySelector("#back-end").offsetHeight
+    const cloud = document.querySelector("#cloud")
+    const cloud_height = document.querySelector("#cloud").offsetHeight
     const consultancy = document.querySelector("#consultancy")
     const consultancy_height = document.querySelector("#consultancy").offsetHeight
+    
     const bi = document.querySelector("#business-intelligence")
   
     const services_height = document.querySelector("#services").offsetHeight
-    const products = document.querySelector("#products")
-    const development = document.querySelector("#development")
+    const club = document.querySelector("#club")
+    const coolturus = document.querySelector("#coolturus")
+    const ecomerce = document.querySelector("#ecomerce")
     const add_class_on_scroll = () => header.classList.add("fixed-nav")
     const remove_class_on_scroll = () => header.classList.remove("fixed-nav")
     const add_show_class_on_scroll = (element) => element.classList.add("show")
@@ -39,13 +43,16 @@
 
       if (scrollpos >= (220 + frontend_height)) { add_show_class_on_scroll(backend) }
 
-      if (scrollpos >= (220 + frontend_height + backend_height)) { add_show_class_on_scroll(consultancy) }
+      if (scrollpos >= (220 + frontend_height + backend_height)) { add_show_class_on_scroll(cloud) }
 
-      if (scrollpos >= (220 + frontend_height + backend_height + consultancy_height)) { add_show_class_on_scroll(bi) }
+      if (scrollpos >= (220 + frontend_height + backend_height + cloud_height)) { add_show_class_on_scroll(consultancy) }
+
+      if (scrollpos >= (220 + frontend_height + backend_height + cloud_height + consultancy_height)) { add_show_class_on_scroll(bi) }
 
       if (scrollpos >= (400 + services_height)) {
-        add_show_class_on_scroll(products)
-        add_show_class_on_scroll(development)
+        add_show_class_on_scroll(club)
+        add_show_class_on_scroll(coolturus)
+        add_show_class_on_scroll(ecomerce)
       }
 
     })

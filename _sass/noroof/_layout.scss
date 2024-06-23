@@ -309,6 +309,10 @@ section {
         animation: 1s ease-out 0s 1 slideInFromRight;
         opacity: 1;
       }
+      &#cloud.show {
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        opacity: 1;
+      }
       &#consultancy.show {
         animation: 1s ease-out 0s 1 slideInFromLeft;
         opacity: 1;

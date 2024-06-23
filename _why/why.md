@@ -1,7 +1,7 @@
 ---
 ---
 
-## Why us?
+## Our pillars
 
 **Communicating fluently** helps us do a greater job. In our experience things go well when we trust each other and we put communication as a priority.
 

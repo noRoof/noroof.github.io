@@ -144,11 +144,24 @@ section {
     }
   }
 
+  &#projects {
+    h3 {
+      text-align: center;
+    }
+  }
+
   &#why-us {
     background-color: #B6E7CF;
+    h2 {
+      color: #111111;
+    }
 
     article.card {
       background-color: ivory;
+
+      h2 {
+        color: $primary-green;
+      }
 
       ul {
         list-style-type: square;

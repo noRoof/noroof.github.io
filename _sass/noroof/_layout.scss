@@ -125,7 +125,7 @@ section {
     position: relative;
   }
 
-  &#process {
+  &#projects {
     background-color: #F0F7FA;
 
     h3 {
@@ -141,12 +141,6 @@ section {
         animation: 1s ease-out 0s 1 slideInFromBottom;
         opacity: 1;
       }
-    }
-  }
-
-  &#projects {
-    h3 {
-      text-align: center;
     }
   }
 
@@ -259,7 +253,7 @@ section {
     }
   }
 
-  &#services {
+  &#process {
     background-color: #F3F3F3;
 
     h2 {

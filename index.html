@@ -47,7 +47,7 @@ subtitle: Home
       cooperation are the keys to bring great products to the market. You know about your business, pains and problems. We are passionate about technology and how to use it to solve problems 
       and to bring new products to life. Let’s work together!
     </p>
-    {% assign sortedServices = site.services | sort: 'position' %}
+    {% assign sortedServices = site.process | sort: 'position' %}
     {% for article in sortedServices %}
     <article id="{{article.serviceId}}">      
         {{article.content}}
@@ -62,7 +62,7 @@ subtitle: Home
       We like to to solve problems and bring solutions that can improve people's lives.
       Take a look at some of them, and feel free to talk with us and discuss new ideas!</p>
     <div class="two-columns">
-      {% for article in site.process %}
+      {% for article in site.projects %}
       <article id="{{article.processId}}" class="vertical-card card">
         {{article.content}}
       </article>
